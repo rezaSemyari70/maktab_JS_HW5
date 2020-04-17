@@ -17,10 +17,9 @@ function validate(str){
     let res = (
            atIndex < dotIndex && 
            atIndex > 0 && 
-           (cloneStr.lastIndexOf('"') < atIndex) &&  
-           cloneStr.indexOf('..') && 
-           cloneStr.indexOf('@@') &&
-           !(cloneStr.indexOf('.') == 0) &&
+           str.indexOf('..') && 
+           str.indexOf('@@') &&
+           !(str.indexOf('.') == 0) &&
            cloneStr.split('').slice().filter(item => item == '@').length <= 1 && 
            cloneStr.includes('@')        
     )

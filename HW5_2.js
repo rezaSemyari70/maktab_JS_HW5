@@ -10,7 +10,7 @@ function validPhonNumber(str){
     }
 }
 
-console.log(validPhonNumber('02178742125'));
+console.log(validPhonNumber('09121734212'));
 
 
 //-----------------------------------
